@@ -37,6 +37,14 @@ Then run `npm run generate` (removes/keeps child pages automatically) — or use
 node scan.js --disable "BharatBolo" --enable "Vybrasonic"
 ```
 
+`npm run generate:scan` also **auto-discovers new projects**: any folder under `C:\Naveen` (or one level deep) with a `README.md` that isn't in the data yet gets added automatically as a **disabled** entry with name/tagline/summary pulled from its README. Review it, then enable it:
+
+```bash
+npm run generate:scan -- --enable "Project Name"
+```
+
+Entries whose repo folder has been deleted are pruned automatically.
+
 ## Adding a brand-new project
 
-Add a new object to the `PRODUCTS` array in `products-data.js` (copy an existing one), set `enabled: true`, then `npm run generate`. `npm run generate:scan` also detects repos it doesn't know yet and prints their README title as a starting point.
+Just create it under `C:\Naveen` with a `README.md`, then run `npm run generate:scan` — it's picked up automatically. Or add a new object to the `PRODUCTS` array in `products-data.js` by hand (copy an existing one), set `enabled: true`, then `npm run generate`.

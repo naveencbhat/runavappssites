@@ -232,5 +232,18 @@ const PRODUCTS = [
       "Runs on CPU or GPU with docker-compose overrides"
     ],
     "docsUrl": ""
+  },
+  {
+    "enabled": false,
+    "status": "internal",
+    "name": "ಕರ್ನಾಡು ವೈಭವ · Karunadu Vaibhava",
+    "repoPath": "C:\\Naveen\\Karunadu",
+    "tagline": "A bilingual, source-verified digital knowledge archive of Karnataka its history, kingdoms,",
+    "category": "Other",
+    "short": "A bilingual, source-verified digital knowledge archive of Karnataka its history, kingdoms, temples, science, literature, language, culture, food and geography. English and Kannada are first-class. Adding another Indian language is a configuration change in the admin portal no schema migration, no app release.",
+    "description": "A bilingual, source-verified digital knowledge archive of Karnataka its history, kingdoms, temples, science, literature, language, culture, food and geography. English and Kannada are first-class. Adding another Indian language is a configuration change in the admin portal no schema migration, no app release.",
+    "stack": [],
+    "highlights": [],
+    "docsUrl": ""
   }
 ];
