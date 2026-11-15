@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CoffeeConnect — Runav Apps</title>
+<meta name="description" content="Find people in your town, chat, and meet up for coffee. Browsing is free; starting chats and meetup invites cost beans — in-app credits bought with real money.">
+<style>
+  :root{--bg:#0b0e14;--card:#151b29;--text:#e8ecf4;--muted:#9aa5b8;--accent:#c9a86a;--accent2:#e6cfa0;--line:rgba(255,255,255,.07)}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+  .wrap{max-width:900px;margin:0 auto;padding:0 24px}
+  header{border-bottom:1px solid var(--line);padding:20px 0}
+  .back{color:var(--muted);font-size:.9rem;text-decoration:none}
+  .back:hover{color:var(--accent)}
+  .hero{padding:70px 0 40px;background:radial-gradient(800px 300px at 70% -20%,rgba(201,168,106,.12),transparent 60%)}
+  .kicker{color:var(--accent);text-transform:uppercase;letter-spacing:.28em;font-size:.75rem;font-weight:700}
+  h1{font-size:clamp(2rem,4.5vw,3rem);margin:.4rem 0 .3rem;letter-spacing:-.02em}
+  .tagline{color:var(--muted);font-size:1.1rem}
+  .status{display:inline-block;margin-top:14px;font-size:.75rem;padding:5px 14px;border-radius:99px;border:1px solid rgba(201,168,106,.4);color:var(--accent2)}
+  section{padding:40px 0}
+  h2{font-size:1.35rem;margin-bottom:1rem}
+  p{color:var(--muted)}
+  .badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+  .badge{font-size:.78rem;padding:5px 13px;border-radius:99px;background:var(--card);border:1px solid var(--line);color:var(--muted)}
+  ul{list-style:none;margin-top:10px}
+  li{color:var(--muted);padding:8px 0 8px 28px;position:relative}
+  li::before{content:'✦';position:absolute;left:0;color:var(--accent)}
+  footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:var(--muted);font-size:.85rem}
+  footer a{color:var(--accent);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="back" href="../index.html">← Runav Apps</a></div></header>
+<div class="hero">
+  <div class="wrap">
+    <div class="kicker">Social</div>
+    <h1>CoffeeConnect</h1>
+    <div class="tagline">Gen Z friend-finding, one coffee at a time</div>
+    <span class="status">beta</span>
+  </div>
+</div>
+<section><div class="wrap">
+  <h2>About</h2>
+  <p>A mobile-first social app with an Express/MongoDB/Socket.IO backend and a Vite admin console. It features distance-based discovery with interest filters, real-time chat with icebreakers, meetup invites, a bean wallet with promo codes, paid events with host payouts, and a CoffeeConnect Plus subscription — all configurable from the admin console.</p>
+  <div class="badges" style="margin-top:22px"><span class="badge">React Native (Expo)</span><span class="badge">Node.js</span><span class="badge">Express</span><span class="badge">MongoDB</span><span class="badge">Socket.IO</span><span class="badge">Stripe</span><span class="badge">React (Vite)</span></div>
+</div></section>
+<section><div class="wrap">
+  <h2>Highlights</h2>
+  <ul><li>Atomic bean ledger — balances can't go negative, no double charges</li><li>Geo discovery with MongoDB 2dsphere queries</li><li>Paid events with Stripe tickets and automatic host payouts</li><li>Full admin console: revenue, moderation, pricing, promos, logs</li></ul>
+</div></section>
+<footer><div class="wrap">© 2026 <a href="../index.html">Runav Apps</a></div></footer>
+</body>
+</html>

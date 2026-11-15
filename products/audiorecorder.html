@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AudioRecorder — Runav Apps</title>
+<meta name="description" content="An iOS-first voice recorder (React Native + Expo) that keeps recording while the iPhone is locked or another app is in front.">
+<style>
+  :root{--bg:#0b0e14;--card:#151b29;--text:#e8ecf4;--muted:#9aa5b8;--accent:#c9a86a;--accent2:#e6cfa0;--line:rgba(255,255,255,.07)}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+  .wrap{max-width:900px;margin:0 auto;padding:0 24px}
+  header{border-bottom:1px solid var(--line);padding:20px 0}
+  .back{color:var(--muted);font-size:.9rem;text-decoration:none}
+  .back:hover{color:var(--accent)}
+  .hero{padding:70px 0 40px;background:radial-gradient(800px 300px at 70% -20%,rgba(201,168,106,.12),transparent 60%)}
+  .kicker{color:var(--accent);text-transform:uppercase;letter-spacing:.28em;font-size:.75rem;font-weight:700}
+  h1{font-size:clamp(2rem,4.5vw,3rem);margin:.4rem 0 .3rem;letter-spacing:-.02em}
+  .tagline{color:var(--muted);font-size:1.1rem}
+  .status{display:inline-block;margin-top:14px;font-size:.75rem;padding:5px 14px;border-radius:99px;border:1px solid rgba(201,168,106,.4);color:var(--accent2)}
+  section{padding:40px 0}
+  h2{font-size:1.35rem;margin-bottom:1rem}
+  p{color:var(--muted)}
+  .badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+  .badge{font-size:.78rem;padding:5px 13px;border-radius:99px;background:var(--card);border:1px solid var(--line);color:var(--muted)}
+  ul{list-style:none;margin-top:10px}
+  li{color:var(--muted);padding:8px 0 8px 28px;position:relative}
+  li::before{content:'✦';position:absolute;left:0;color:var(--accent)}
+  footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:var(--muted);font-size:.85rem}
+  footer a{color:var(--accent);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="back" href="../index.html">← Runav Apps</a></div></header>
+<div class="hero">
+  <div class="wrap">
+    <div class="kicker">Productivity</div>
+    <h1>AudioRecorder</h1>
+    <div class="tagline">Voice notes that keep recording, screen locked or not</div>
+    <span class="status">live</span>
+  </div>
+</div>
+<section><div class="wrap">
+  <h2>About</h2>
+  <p>Record with a live timer and waveform, manage recordings with play, seek, rename and delete, and see storage usage at a glance. Recordings can auto-delete after 7, 30 or 90 days. Ships with full EAS build and App Store / Play Store submit scripts.</p>
+  <div class="badges" style="margin-top:22px"><span class="badge">React Native</span><span class="badge">Expo SDK 58</span><span class="badge">TypeScript</span><span class="badge">iOS background audio</span><span class="badge">AVAudioSession</span><span class="badge">EAS</span></div>
+</div></section>
+<section><div class="wrap">
+  <h2>Highlights</h2>
+  <ul><li>True background recording via the iOS audio background mode</li><li>Live waveform and metering while recording</li><li>Auto-delete after 7 / 30 / 90 days</li><li>One-command App Store build &amp; submit</li></ul>
+</div></section>
+<footer><div class="wrap">© 2026 <a href="../index.html">Runav Apps</a></div></footer>
+</body>
+</html>

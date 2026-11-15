@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bharatham — Runav Apps</title>
+<meta name="description" content="A community-contributed, editorially controlled knowledge platform about India's history, civilisation, culture, knowledge and Sanatana Dharma.">
+<style>
+  :root{--bg:#0b0e14;--card:#151b29;--text:#e8ecf4;--muted:#9aa5b8;--accent:#c9a86a;--accent2:#e6cfa0;--line:rgba(255,255,255,.07)}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+  .wrap{max-width:900px;margin:0 auto;padding:0 24px}
+  header{border-bottom:1px solid var(--line);padding:20px 0}
+  .back{color:var(--muted);font-size:.9rem;text-decoration:none}
+  .back:hover{color:var(--accent)}
+  .hero{padding:70px 0 40px;background:radial-gradient(800px 300px at 70% -20%,rgba(201,168,106,.12),transparent 60%)}
+  .kicker{color:var(--accent);text-transform:uppercase;letter-spacing:.28em;font-size:.75rem;font-weight:700}
+  h1{font-size:clamp(2rem,4.5vw,3rem);margin:.4rem 0 .3rem;letter-spacing:-.02em}
+  .tagline{color:var(--muted);font-size:1.1rem}
+  .status{display:inline-block;margin-top:14px;font-size:.75rem;padding:5px 14px;border-radius:99px;border:1px solid rgba(201,168,106,.4);color:var(--accent2)}
+  section{padding:40px 0}
+  h2{font-size:1.35rem;margin-bottom:1rem}
+  p{color:var(--muted)}
+  .badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+  .badge{font-size:.78rem;padding:5px 13px;border-radius:99px;background:var(--card);border:1px solid var(--line);color:var(--muted)}
+  ul{list-style:none;margin-top:10px}
+  li{color:var(--muted);padding:8px 0 8px 28px;position:relative}
+  li::before{content:'✦';position:absolute;left:0;color:var(--accent)}
+  footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:var(--muted);font-size:.85rem}
+  footer a{color:var(--accent);text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="back" href="../index.html">← Runav Apps</a></div></header>
+<div class="hero">
+  <div class="wrap">
+    <div class="kicker">Knowledge Platform</div>
+    <h1>Bharatham</h1>
+    <div class="tagline">India's heritage, community-built</div>
+    <span class="status">live</span>
+  </div>
+</div>
+<section><div class="wrap">
+  <h2>About</h2>
+  <p>Bharatham combines a Node/Express + Prisma + PostgreSQL API, a Next.js admin portal and an Expo mobile/web app so contributors can add entries, reviewers approve them, and readers explore India's heritage in English, Hindi and Kannada. The seed corpus ships with 219 entries, 96 references and quizzes, and deployment is a single Vercel deployment serving the API, admin and public web app.</p>
+  <div class="badges" style="margin-top:22px"><span class="badge">Node 22</span><span class="badge">Express 5</span><span class="badge">Prisma 6</span><span class="badge">PostgreSQL 16</span><span class="badge">Redis</span><span class="badge">Next.js 15</span><span class="badge">React 19</span><span class="badge">Expo SDK 58</span><span class="badge">React Native Web</span><span class="badge">TipTap</span><span class="badge">Tailwind</span></div>
+</div></section>
+<section><div class="wrap">
+  <h2>Highlights</h2>
+  <ul><li>Multi-role editorial workflow: contributor → reviewer → moderator → admin</li><li>Trilingual UI strings (English / Hindi / Kannada) via a shared package</li><li>Interactive Swagger API docs and one-deployment hosting</li><li>Quizzes and references for a credible, cited knowledge base</li></ul>
+</div></section>
+<footer><div class="wrap">© 2026 <a href="../index.html">Runav Apps</a></div></footer>
+</body>
+</html>

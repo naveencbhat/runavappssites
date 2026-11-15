@@ -1,0 +1,13 @@
+{
+  "name": "runav-apps-sites",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static company site for Runav Apps — generated from the projects under C:\\Naveen",
+  "scripts": {
+    "generate": "node generate.js",
+    "generate:scan": "node scan.js && node generate.js",
+    "upload": "node upload.js",
+    "serve": "npx --yes serve ."
+  },
+  "license": "UNLICENSED"
+}
